@@ -102,6 +102,8 @@ def run():
     Unir a worker con una llave más que se agrega al diccionario con pip (|)
     Transformar al diccionario en DATA de nuestro diccioario principal con un nuevo diccioario
     pip | sirve para unir a un diccioario con uno nuevo, con listas lo haciamos con el simbolo (+)
+    El resultadom me arroja un diccionario con la llave TRUE or FALSE si la persona tiene > 70 years
+     
     """
     old_people = list(map(lambda worker: worker | {"old": worker["age"] > 70}, DATA))
     
